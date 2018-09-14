@@ -1,49 +1,96 @@
-s<!DOCTYPE html>
+s
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--animate.css-->
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Survey Form</title>
 </head>
 
 <body>
-    <h1 class="animated bounce" id="title">Survey Form</h1>
-    <p id="description">Short axplanation</p>
-    <form id="survey-form" action="">
-        <label id="name-label" for="name">* Name: </label>
-        <input id="name" type="text" placeholder="Enter your name" required>
-        <label id="email-label" for="email">* Email: </label>
-        <input id="email" type="email"  placeholder="Enter your Email" required>
-        <label id="number-label" for="age">* Age: </label>
-        <input type="number" min="1" max="125" id="number" placeholder="Age">
-
-        <select id="dropdown">
-            <option value="learner">option1</option>
-            <option value="preferNo">option2</option>
-            <option value="other">option2</option>
-        </select>
-
-        <label>Definitely<input name="radio-buttons" type="radio" value="1"></label>
-        <label>yes<input name="radio-buttons" type="radio" value="2"></label>
-        <label>Maybe<input name="radio-buttons" type="radio" value="3"></label>
-
-        <label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label>
-        <label><input name="prefer" value="3" type="checkbox" class="userRatings">Data Visualization</label>
-
-        <textarea style="height:50px;resize:vertical;" placeholder="Enter your comment here..."></textarea>
-
-
-
-
-
-
-        <button id="submit" type="submit">Submit</button>
-    </form>
+    <h1 class="animated fadeInDown" id="title">Survey Form</h1>
+    <div class="form-card animated bounceIn">
+        <p id="description">Short axplanation about what the form is actually, and how it works.</p>
+        <form id="survey-form" action="">
+            <div class="row-tab">
+                <div class="labels">
+                    <label id="name-label" for="name">* Name: </label>
+                </div>
+                <div class="right-tab">
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </div>
+            </div>
+            <div class="row-tab">
+                <div class="labels">
+                    <label id="email-label" for="email">* Email: </label>
+                </div>
+                <div class="right-tab">
+                    <input id="email" type="email" placeholder="Enter your Email" required>
+                </div>
+            </div>
+            <div class="row-tab">
+                <div class="labels">
+                    <label id="number-label" for="age">* Age: </label>
+                </div>
+                <div class="right-tab">
+                    <input type="number" min="1" max="125" id="number" placeholder="Age">
+                </div>
+            </div>
+            <div class="row-tab">
+                <div class="labels">
+                    <p>Select an Option:</p>
+                </div>
+                <div class="right-tab">
+                    <select id="dropdown">
+                        <option value="learner">option1</option>
+                        <option value="preferNo">option2</option>
+                        <option value="other">option2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row-tab">
+                <div class="labels">
+                    <p>Select Radio Button:</p>
+                </div>
+                <div class="right-tab">
+                    <div class="radios">
+                        <label><input name="radio-buttons" type="radio" value="1">Definitely</label>
+                        <label><input name="radio-buttons" type="radio" value="2">yes</label>
+                        <label><input name="radio-buttons" type="radio" value="3">Maybe</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row-tab">
+                <div class="labels">
+                    <p>Select the Checkboxes you choose:</p>
+                </div>
+                <div class="right-tab">
+                    <div class="checkboxes">
+                        <label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label>
+                        <label><input name="prefer" value="3" type="checkbox" class="userRatings">Data Visualization</label>
+                        <label><input name="prefer" value="3" type="checkbox" class="userRatings">Data Science</label>
+                        <label><input name="prefer" value="3" type="checkbox" class="userRatings">Syber Security</label>
+                        <label><input name="prefer" value="3" type="checkbox" class="userRatings">Web Development</label>
+                        <label><input name="prefer" value="3" type="checkbox" class="userRatings">Backend Expert</label>
+                        <label><input name="prefer" value="3" type="checkbox" class="userRatings">Information Expert</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row-tab">
+                <div class="labels">
+                    <p>Write us your comments:</p>
+                </div>
+                <div class="right-tab">
+                    <textarea style="height:50px;resize:vertical;" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
