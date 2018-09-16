@@ -69,3 +69,27 @@ p {
 #submit:hover{
     background-color: #0e4364;
 }
+
+@media (max-width: 470px) {
+    .form-card{
+       
+    }
+    #name-label, #email-label{
+        display: none;
+    }
+    #comment-label{
+        display: none;
+    }
+    #name, #email, textarea {
+        width: 260px;
+        height: 40px;
+    }
+    .input{
+        padding: 0;
+        width: 13px;
+    }
+    textarea {
+        position: relative;
+        left: 13px;
+    }
+}
